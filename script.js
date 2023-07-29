@@ -9,19 +9,26 @@ function computeTemp(event) {
         case "Celcius":
             fahrenheitEl.value = (currentValue * 9 / 5) + 32;
             kelvinEl.value = parseFloat(currentValue) + 273.15;
-            document.getElementById("bd").style.backgroundImage="url(bgimg1.jpeg)"
+            // setTimeout(() =>{
+            //     document.getElementById("bd").style.backgroundImage="url(bg2.jpeg)"
+            // }, 550);
+           
             break;
 
         case "Fahrenheit":
             celciusEl.value = (currentValue - 32) * 5 / 9;
             kelvinEl.value = (currentValue - 32) * 5 / 9 + 273.15;
-            document.getElementById("bd").style.backgroundImage="url(bgimg2.jpeg)"
+            // setTimeout(() =>{
+            //     document.getElementById("bd").style.backgroundImage="url(bgimg2.jpeg)"
+            // }, 550);
             break;
 
         case "Kelvin":
             celciusEl.value = currentValue - 273.15;
             fahrenheitEl.value = (currentValue - 273.15) * 9 / 5 + 32;
-            document.getElementById("bd").style.backgroundImage="url(bgimg3.jpeg)"
+            // setTimeout(() =>{
+            //     document.getElementById("bd").style.backgroundImage="url(bgimg3.jpeg)"
+            // }, 550);
             break;
 
         default:

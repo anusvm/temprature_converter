@@ -1,8 +1,8 @@
 body {
-    background-image: url('bg.jpeg');
+    background-image: url('temp_converter_gif.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%; 
+    background-size: 100% 120%; 
     margin: 0;
     display: flex;
     justify-content: center;
@@ -10,23 +10,25 @@ body {
     min-height: 100vh;
     /* background: linear-gradient(90deg, rgba(93, 99, 204, 1) 0%, rgba(245, 240, 242, 1) 100%, rgba(0, 212, 255, 1) 100%); */
     font-family: monospace, sans-serif;
-    color: black;
+    color: white;
 }
 
 
 
 .container {
-    background: rgba(109, 140, 194, 0.3);
+    /* background: rgba(26, 4, 74, 0.3); */
+    background:  rgb(177, 23, 23);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 10px rgba(204, 130, 33, 0.3);
     width: 85%;
-    max-width: 750px;
+    max-width: 650px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 400px;
+    margin-left: 0px;
+    margin-bottom: -200px;
 }
 
 .heading {
@@ -36,7 +38,7 @@ body {
 .temp-container {
     width: 100%;
     padding: 15px;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 25px;
     display: flex;
     flex-direction: row;
@@ -47,16 +49,17 @@ body {
 input {
     width: 60%;
     font-family: monospace;
+    font-weight: bold;
     padding: 5px;
     outline: none;
     background: rgba(0, 212, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.6);
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
 input::placeholder {
-    color:black;
+    color:white;
 }
 
 /* Responsive CSS */
